@@ -10,9 +10,5 @@ Pod::Spec.new do |s|
   s.library         = 'z'
   s.preserve_paths  = ['Tests', '.gitignore']
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-
-  # Maintain the dir structure for headers
-  def s.copy_header_mapping(from)
-    from
-  end
+  s.header_mappings_dir = '.'
 end
